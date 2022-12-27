@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:columnCount="3">
+
+    <TextView
+        android:id="@+id/bsd_category_work"
+        android:layout_columnWeight="1"
+        android:text="업 무"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/bg_black_border"
+        android:padding="10dp"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:id="@+id/bsd_category_study"
+        android:layout_columnWeight="1"
+        android:text="공 부"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/bg_black_border"
+        android:padding="10dp"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:id="@+id/bsd_category_health"
+        android:layout_columnWeight="1"
+        android:text="운 동"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/bg_black_border"
+        android:padding="10dp"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:id="@+id/bsd_category_hobby"
+        android:layout_columnWeight="1"
+        android:text="취 미"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/bg_black_border"
+        android:padding="10dp"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:id="@+id/bsd_category_meeting"
+        android:layout_columnWeight="1"
+        android:text="약 속"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/bg_black_border"
+        android:padding="10dp"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:id="@+id/bsd_category_etc"
+        android:layout_columnWeight="1"
+        android:text="기 타"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/bg_black_border"
+        android:padding="10dp"
+        android:layout_margin="4dp"/>
+
+</GridLayout>

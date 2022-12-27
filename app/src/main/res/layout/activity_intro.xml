@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity"
+    android:background="@color/geng_yellow"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Self\nDiscipliner"
+        android:textSize="60sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="간편한 일정 관리 앱"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/calendar"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/profile_default_round"
+        app:civ_border_width="1.5dp"
+        app:civ_border_color="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/et_name"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="이름을 입력하세요"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:background="@drawable/bg_black_border"
+        android:padding="8dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_above="@+id/btn_start"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="시작하기"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+
+</RelativeLayout>

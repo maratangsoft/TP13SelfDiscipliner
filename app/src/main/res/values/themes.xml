@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TP13SelfDiscipliner" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/geng_yellow</item>
+        <item name="colorPrimaryVariant">#EFDB82</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+
+        <!-- Customize your theme here. -->
+        <!-- 상태표시줄의 아이콘 또는 글씨 색상(직접 바꾸는게 아니라, 상태표시줄이 밝은색이라고만 명시해주면 됨) -->
+        <!-- <item name="android:windowLightStatusBar">true</item> -->
+
+        <!-- 제목줄의 메뉴아이콘 색상 지정 -->
+        <item name="colorControlNormal">@color/black</item>
+    </style>
+
+    <!-- EditActivity 만의 테마 스타일-->
+    <style name="EditActivityTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorControlNormal">@color/black</item>
+
+        <!-- BottomSheetDialog의 스타일 작업: 개복잡함 -->
+        <item name="bottomSheetDialogTheme">@style/MyBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="MyBottomSheetDialogTheme" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/MyBottomSheetStyle</item>
+    </style>
+
+    <style name="MyBottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="backgroundTint">@color/geng_yellow</item>
+        <item name="shapeAppearanceOverlay">@style/MyRoundedCornerBottomSheetShape</item>
+    </style>
+
+    <style name="MyRoundedCornerBottomSheetShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+    </style>
+</resources>

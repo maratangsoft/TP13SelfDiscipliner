@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/geng_yellow"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/profile_default_round"
+        app:civ_border_width="1.5dp"
+        app:civ_border_color="@color/black"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등급: GOLD"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:layout_toEndOf="@+id/civ_profile"
+        android:layout_alignTop="@+id/civ_profile"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요 홍길동님"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:layout_below="@+id/tv_level"
+        android:layout_alignStart="@+id/tv_level"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/civ_profile"
+        android:layout_margin="24dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            인클루드는 뷰가 아니다!! 그래서 리스너를 못 담. 그래서 인클루드된 XML로 가서 카드뷰에 아이디를 줘야 함-->
+            <include layout="@layout/category_all"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:id="@+id/include_category_all"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+                <include layout="@layout/category_work"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/include_category_work"/>
+                <include layout="@layout/category_study"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/include_category_study"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+                <include layout="@layout/category_health"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/include_category_health"/>
+                <include layout="@layout/category_hobby"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/include_category_hobby"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+                <include layout="@layout/category_meeting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/include_category_meeting"/>
+                <include layout="@layout/category_etc"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/include_category_etc"/>
+            </LinearLayout>
+
+            <include layout="@layout/category_done"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:id="@+id/include_category_done"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

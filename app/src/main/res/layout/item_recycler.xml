@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:contentPadding="16dp"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/todo_item_iv_category"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_study"
+            android:layout_marginHorizontal="16dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/todo_item_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TODO Title"
+            android:textColor="@color/black"
+            android:fontFamily="@font/munhwajaedolbomche_regular"
+            android:padding="4dp"
+            android:layout_toEndOf="@+id/todo_item_iv_category"/>
+
+        <TextView
+            android:id="@+id/todo_item_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022년 10월 28일"
+            android:textSize="10sp"
+            android:fontFamily="@font/munhwajaedolbomche_regular"
+            android:layout_below="@+id/todo_item_tv_title"
+            android:layout_toEndOf="@id/todo_item_iv_category"
+            android:padding="4dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

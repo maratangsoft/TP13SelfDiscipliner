@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_hobby"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취미"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:textSize="20sp"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="99"
+        android:textColor="@color/black"
+        android:fontFamily="@font/munhwajaedolbomche_regular"
+        android:layout_gravity="right"
+        android:layout_margin="8dp"/>
+
+</androidx.cardview.widget.CardView>
